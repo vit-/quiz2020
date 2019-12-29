@@ -1,3 +1,21 @@
 .row {
     margin: 1em;
 }
+
+#finish {
+    background-image: url("crystal-show.jpg");
+    background-position: top center;
+    background-size: cover;
+    height: 100vh;
+}
+
+#finish .container {
+    padding-top: 4rem;
+}
+
+#finish .card {
+    color: white;
+    border-radius: 0.5rem;
+    background-color: rgba(60,60,60,0.439216);
+    padding: 2rem;
+}
