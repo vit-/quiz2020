@@ -4,8 +4,8 @@
 
 .bg {
     background-image: url("bg.jpg");
-    background-position: center center;
-    background-size: cover;
+    background-position: top center;
+    background-size: initial;
     min-height: 100vh;
 }
 

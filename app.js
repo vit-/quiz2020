@@ -19,6 +19,7 @@ $(document).on('click', '#game .btn.correct', function () {
     console.log('Correct!');
     $('#result .alert-danger').hide(transitionTime);
     $('#result .alert-success').show(transitionTime);
+    $('#explanation').show(transitionTime);
     $('#task').hide(transitionTime);
     $('#next').show(transitionTime);
 });
@@ -46,7 +47,7 @@ function tickGame() {
         $('#result .alert').hide();
         $('#next').hide();
         $('#explanation').hide().text(question.explanation);
-        $('#task').hide().empty().append($('<div class="row mx-auto"></div>').append($('<h1></h1>').text(question.text)));
+        $('#task').hide().empty().append($('<div class="row mx-auto"></div>').append($('<h2></h2>').text(question.text)));
         question.answers.sort(() => Math.random() - 0.5).forEach(function(answer, index) {
             $('#task').append(renderAnswer(answer));
         });
