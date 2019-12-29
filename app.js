@@ -47,7 +47,7 @@ function tickGame() {
         $('#next').hide();
         $('#explanation').hide().text(question.explanation);
         $('#task').hide().empty().append($('<div class="row mx-auto"></div>').append($('<h1></h1>').text(question.text)));
-        question.answers.forEach(function(answer, index) {
+        question.answers.sort(() => Math.random() - 0.5).forEach(function(answer, index) {
             $('#task').append(renderAnswer(answer));
         });
         $('#task').show(transitionTime);
