@@ -32,6 +32,7 @@ $(document).on('click', '#game .btn.incorrect', function (event) {
 
 function endGame() {
     $('#game').hide(transitionTime, function () {
+        $('.bg').hide();
         $('#finish').show(transitionTime);
     });
 }

@@ -2,18 +2,25 @@
     margin: 1em;
 }
 
+.bg {
+    background-image: url("bg.jpg");
+    background-position: center center;
+    background-size: cover;
+    min-height: 100vh;
+}
+
 #finish {
     background-image: url("crystal-show.jpg");
     background-position: center center;
     background-size: cover;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 #finish .container {
     padding-top: 4rem;
 }
 
-#finish .card {
+.card {
     color: white;
     border-radius: 0.5rem;
     background-color: rgba(60,60,60,0.439216);

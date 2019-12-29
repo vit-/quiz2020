@@ -12,15 +12,19 @@
     <title>Вікторіна курва мать!</title>
 </head>
 <body>
+<div class="bg">
     <div id="loading" class="container">
+        <div class="card">
         <div class="row mx-auto">
             <div class="w-100 text-center">
                 <h3>Завантаження, чекайте...</h3>
             </div>
         </div>
+        </div>
     </div>
 
     <div id="welcome" style="display: none" class="container">
+        <div class="card">
         <div class="row mx-auto">
             <h1>Шальом котики!</h1>
         </div>
@@ -30,20 +34,25 @@
         <div class="row mx-auto">
             <button class="btn btn-primary btn-lg w-100 text-center start">Вйо до пригод!</button>
         </div>
+        </div>
     </div>
 
     <div id="game" style="display: none" class="container">
-        <div id="result" class="row mx-auto">
-            <div class="alert alert-success w-100 text-center" style="display: none" role="alert">Еге ж!</div>
-            <div class="alert alert-danger w-100 text-center" style="display: none" role="alert">Ніт!</div>
+        <div class="card">
+            <div>
+            <div id="result" class="row mx-auto">
+                <div class="alert alert-success w-100 text-center" style="display: none" role="alert">Еге ж!</div>
+                <div class="alert alert-danger w-100 text-center" style="display: none" role="alert">Ніт!</div>
+            </div>
+            <div id="explanation" class="row mx-auto"></div>
+            <div id="next" class="row mx-auto" style="display: none">
+                <button class="btn btn-primary w-100 text-center">Поїхали далі!</button>
+            </div>
+            </div>
+            <div id="task"></div>
         </div>
-        <div id="explanation" class="row mx-auto"></div>
-        <div id="next" class="row mx-auto" style="display: none">
-            <button class="btn btn-primary w-100 text-center">Поїхали далі!</button>
-        </div>
-        <div id="task"></div>
     </div>
-
+</div>
     <div id="finish" style="display: none">
         <div class="container h-100">
             <div class="card">
